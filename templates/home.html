@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %} Home {% endblock title %}
+{% block main_content %}
+  <h4>Crypto price data into CSV</h4>
+  <form action="" method="post">
+    <label for="symbol">Symbol: </label>
+    <input type="text" name="symbol" id="symbol"> tBTCUSD - tETHUSD<br><br>
+
+
+    <label for="startdate">Start Date: </label>
+    <input type="date" name="startdate" id="startdate">
+
+    <label for="enddate">End Date: </label>
+    <input type="date" name="enddate" id="enddate"><br><br>
+
+    <label for="timeframe">Time Frame: 1m - 1h - 1d </label>
+    <input type="text" name="timeframe" id="timeframe"><br><br>
+
+    <button type="submit">submit</button>
+  </form>
+{% endblock main_content %}<h1>Hello</h1>

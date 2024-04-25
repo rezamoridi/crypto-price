@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block title %} Downlaod {% endblock title %}{% block
+main_content %} 
+<h4>output</h4>
+{% for line in data_csv %}
+<h6>{{ line }}</h6>
+{% endfor %}
+<div>
+    <h5>{{ data }}</h5>
+</div>
+{% endblock main_content %}
